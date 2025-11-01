@@ -137,97 +137,113 @@
   <p>➡️ Below you’ll find publications, selected projects, teaching, and education. If you want a quick overview, my <a href="files/Zain_Shabeeb_CV.pdf" target="_blank" rel="noopener">CV</a> and <a href="files/Zain_Shabeeb_Resume.pdf" target="_blank" rel="noopener">resume</a> are up to date.</p>
 </section>
 
-      <section id="research" class="card" aria-labelledby="research-heading">
-        <h2 id="research-heading">Research & Publications</h2>
+      <section id="publications" class="card" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
 
-        <article class="entry" data-tags="Robotics RL">
-          <header>
-            <h3 class="entry-title">Legged Robot Navigation in Uncertain Terrains using Deep Reinforcement Learning</h3>
-            <p class="entry-meta"><em>Georgia Institute of Technology · Research Project</em></p>
-          </header>
-          <p>Developed a dynamic, vectorized RaiSim environment and integrated deep reinforcement learning (PyTorch) to train a navigation policy on top of a low-level locomotion controller. Designed custom rewards to optimize point-to-goal navigation. Created diverse terrains and explored motion planning (RRT, A*) and dataset generation for imitation learning. Gained expertise in robot kinematics and frame transformations for legged robots.</p>
-          <!-- <div class="media-row">
-            <figure>
-              <img src="images/capstone proj report.png" srcset="images/capstone proj report.png 300w, images/capstone proj report.png 600w" sizes="(max-width: 700px) 45vw, 300px" width="300" height="200" alt="Cover thumbnail of the legged robot navigation report" loading="lazy" decoding="async">
-              <figcaption>Project Report</figcaption>
-            </figure>
-          </div> -->
-          <div class="media-row">
-            <figure>
-              <iframe src="https://drive.google.com/file/d/1V7_6QbQywA20UvEP3XbFfvrYVioojA_F/preview" width="300" height="200" loading="lazy" title="Lateral view video" allow="autoplay"></iframe>
-              <figcaption>Video 1</figcaption>
-            </figure>
-            <figure>
-              <iframe src="https://drive.google.com/file/d/1V88QNcGsLN44wQ76EdNuBSbziz7VqR5I/preview" width="300" height="200" loading="lazy" title="Top view video" allow="autoplay"></iframe>
-              <figcaption>Video 2</figcaption>
-            </figure>
-          </div>
-          <div class="resources" aria-label="Resources">
-            <a class="resource" href="https://drive.google.com/file/d/1VOAhbj0JYWm-aivxUDTKNbys2pnibXPD/view?usp=sharing" target="_blank" rel="noopener" aria-label="Open project report in Google Drive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Project Report</span></a>
+  <article class="entry" data-tags="Generative Models LPTEM">
+    <header>
+      <h3 class="entry-title">Physics-informed generative modeling for liquid-phase TEM of nanoparticle diffusion</h3>
+      <p class="entry-meta"><em>Nature Communications</em>, 2025 · Zain Shabeeb et&nbsp;al.</p>
+    </header>
+    <p>Transformer-VAE framework that learns nanoscale dynamics from low-SNR LPTEM movies and generates physically consistent trajectories/images for analysis and simulation.</p>
+    <div class="resources">
+      <a class="resource" href="https://scholar.google.com/citations?hl=en&user=NOiF-vsAAAAJ" target="_blank" rel="noopener" aria-label="View on Google Scholar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Scholar</span>
+      </a>
+      <!-- Optional: preprint or code links -->
+      <!-- <a class="resource" href="LINK_TO_PREPRINT" target="_blank" rel="noopener"><svg ...></svg><span>Preprint</span></a> -->
+      <!-- <a class="resource" href="LINK_TO_CODE" target="_blank" rel="noopener"><svg ...></svg><span>Code</span></a> -->
+    </div>
+  </article>
 
-          </div>
-        </article>
+  <article class="entry" data-tags="AI4Science">
+    <header>
+      <h3 class="entry-title">Learning nanoscale dynamics from electron microscopy (extended abstract)</h3>
+      <p class="entry-meta"><em>NeurIPS AI4Science Workshop</em>, 2025 · Zain Shabeeb et&nbsp;al.</p>
+    </header>
+    <p>Workshop contribution on physics-guided generative modeling and evaluation for EM datasets, emphasizing data-efficiency and high-frequency fidelity.</p>
+    <div class="resources">
+      <a class="resource" href="https://scholar.google.com/citations?hl=en&user=NOiF-vsAAAAJ" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Scholar</span>
+      </a>
+    </div>
+  </article>
 
-        <article class="entry" data-tags="CV Medicine">
-          <header>
-            <h3 class="entry-title">An AI Model for Instance Segmentation and Tooth Numbering on Orthopantomograms</h3>
-            <p class="entry-meta"><em>International Journal of Computerized Dentistry (2023)</em> · Niha Adnan, Waleed Bin Khalid, Fahad Umer</p>
-          </header>
-          <p>Worked with a team of dentists at one of the leading hospitals in Pakistan to develop a deep-learning pipeline for teeth segmentation and labeling using U-NET and FRCNN. An Orthopantomograms (OPGs) dataset was self-annotated & processed for the project using PIL, numpy, JSON & OpenCV.</p>
-          <div class="media-row">
-            <figure>
-              <img src="images/5 - mask.png" srcset="images/5 - mask.png 300w, images/5 - mask.png 600w" sizes="(max-width: 700px) 45vw, 300px" alt="Ground-truth tooth segmentation mask" loading="lazy" decoding="async">
-              <figcaption>Ground-truth Mask</figcaption>
-            </figure>
-            <figure>
-              <img src="images/tooth seg.jpeg" srcset="images/tooth seg.jpeg 300w, images/tooth seg.jpeg 600w" sizes="(max-width: 700px) 45vw, 300px" alt="Visualization of instance segmentation of teeth" loading="lazy" decoding="async">
-              <figcaption>Instance Segmentation</figcaption>
-            </figure>
-            <figure>
-              <img src="images/obj detect.jpeg" srcset="images/obj detect.jpeg 300w, images/obj detect.jpeg 600w" sizes="(max-width: 700px) 45vw, 300px" alt="Teeth detection and numeric labeling visualization" loading="lazy" decoding="async">
-              <figcaption>Detection & Labels</figcaption>
-            </figure>
-          </div>
-          <div class="resources">
-            <a class="resource" href="https://europepmc.org/article/med/36705317" target="_blank" rel="noopener" aria-label="View the full publication">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Publication</span>
-            </a>
-          </div>
-        </article>
+  <!-- Add more as they’re published; keep this structure -->
+</section>
 
-        <article class="entry" data-tags="Robotics Medicine">
-          <header>
-            <h3 class="entry-title">Contactless Vitals Measurement Robot</h3>
-            <p class="entry-meta"><em>ICARA (2022)</em> · Waleed Bin Khalid, Amna Anwar, Owais Talaat Waheed</p>
-          </header>
-          <p>Designed and developed a contactless vitals measurement robot equipped with an Ackermann drive for my undergraduate final year project. The robot utilised a camera, machine learning, and signal processing to measure vitals and decrease medical staff contact time with contagious patients. The system reported around 70% accuracy for Blood Pressure, and 90% for Heart Rate, Oxygen Saturation, and Temperature. I presented the work as the first author at ICARA 2022 and received the Best Capstone Project award for this work.</p>
-          <div class="media-row">
-            <!-- <figure>
-              <img src="images/contactless vitals thesis pic.png" srcset="images/contactless vitals thesis pic.png 300w, images/contactless vitals thesis pic.png 600w" sizes="(max-width: 700px) 45vw, 300px" alt="Thumbnail of contactless vitals thesis document" loading="lazy" decoding="async">
-              <figcaption>Thesis</figcaption>
-            </figure>
-            <figure>
-              <img src="images/ieeePageDisplay.png" srcset="images/ieeePageDisplay.png 300w, images/ieeePageDisplay.png 600w" sizes="(max-width: 700px) 45vw, 300px" alt="IEEE publication page thumbnail" loading="lazy" decoding="async">
-              <figcaption>IEEE Article</figcaption>
-            </figure> -->
-            <!-- <figure>
-              <img src="images/contactless vitals measurement design.png" srcset="images/contactless vitals measurement design.png 300w, images/contactless vitals measurement design.png 600w" sizes="(max-width: 700px) 45vw, 300px" alt="Design diagram of the contactless vitals measurement robot" loading="lazy" decoding="async">
-              <figcaption>Design</figcaption>
-            </figure> -->
-          </div>
-          <div class="media-row">
-            <figure>
-              <iframe src="https://www.youtube.com/embed/yuYqhCQHWI4" width="300" height="200" loading="lazy" title="Data collection video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-              <figcaption>Video</figcaption>
-            </figure>
-          </div>
-          <div class="resources">
-            <a class="resource" href="https://drive.google.com/file/d/1dmpo7BZbzWkDmhA3sYa2WLOv3P7I_K-t/view?usp=sharing" target="_blank" rel="noopener" aria-label="Open full thesis in Google Drive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Thesis</span></a>
-            <a class="resource" href="https://ieeexplore.ieee.org/document/9738523" target="_blank" rel="noopener" aria-label="Open IEEE publication"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Publication</span></a>
-          </div>
-        </article>
-      </section>
 
+
+<section id="projects" class="card" aria-labelledby="projects-heading">
+  <h2 id="projects-heading">Selected Projects</h2>
+
+  <article class="entry" data-tags="LPTEM Generative AI">
+    <header>
+      <h3 class="entry-title">LEONARDO — Physics-informed Transformer-VAE for LPTEM</h3>
+      <p class="entry-meta"><em>Georgia Tech · 2024–2025</em></p>
+    </header>
+    <p>End-to-end pipeline to learn and simulate nanoparticle diffusion from LPTEM, with metrics on kurtosis/variance matching, IPSD alignment, and domain-specific evaluation.</p>
+    <div class="resources">
+      <!-- Replace with your real links -->
+      <!-- <a class="resource" href="LINK_TO_CODE" target="_blank" rel="noopener"><svg ...></svg><span>Code</span></a> -->
+      <!-- <a class="resource" href="LINK_TO_DOCS" target="_blank" rel="noopener"><svg ...></svg><span>Docs</span></a> -->
+    </div>
+  </article>
+
+  <article class="entry" data-tags="Cryo-EM Super-Resolution">
+    <header>
+      <h3 class="entry-title">CryoGEN — Compressed sensing with diffusion priors for cryo-EM</h3>
+      <p class="entry-meta"><em>Georgia Tech · 2024–2025</em></p>
+    </header>
+    <p>Diffusion-prior guided reconstruction for high-frequency recovery from compressed/low-dose cryo-EM measurements; focuses on data-efficiency and frequency-domain fidelity.</p>
+    <div class="resources">
+      <!-- <a class="resource" href="LINK_TO_PREPRINT_OR_SLIDES" target="_blank" rel="noopener"><svg ...></svg><span>Slides</span></a> -->
+    </div>
+  </article>
+
+  <article class="entry" data-tags="Classification EM">
+    <header>
+      <h3 class="entry-title">MoNet 2.0 — Trajectory-based classifier for nanoscale motion</h3>
+      <p class="entry-meta"><em>Georgia Tech · 2024–2025</em></p>
+    </header>
+    <p>Feature-learning and probabilistic metrics for labeling anomalous diffusion regimes in LPTEM trajectories; supports evaluation of generative trajectories (FID-style on features).</p>
+  </article>
+</section>
+
+
+<section id="talks" class="card" aria-labelledby="talks-heading">
+  <h2 id="talks-heading">Talks</h2>
+
+  <article class="entry">
+    <header>
+      <h3 class="entry-title">Physics-informed generative AI for nanoscale imaging</h3>
+      <p class="entry-meta"><em>NeurIPS AI4Science Workshop</em>, Poster · 2025</p>
+    </header>
+    <p>Overview of generative modeling for LPTEM/cryo-EM with emphasis on high-frequency fidelity and physical constraints.</p>
+  </article>
+
+  <article class="entry">
+    <header>
+      <h3 class="entry-title">Learning nanoparticle dynamics in liquid-phase TEM</h3>
+      <p class="entry-meta"><em>AIChE Annual Meeting</em>, Talk/Poster · 2025</p>
+    </header>
+    <p>Physics-guided learning framework for stochastic dynamics from experimental trajectories and images.</p>
+  </article>
+</section>
+
+<section id="awards" class="card" aria-labelledby="awards-heading">
+  <h2 id="awards-heading">Awards</h2>
+
+  <article class="entry">
+    <header>
+      <h3 class="entry-title">Eckert Graduate Fellowship</h3>
+      <p class="entry-meta"><em>Georgia Tech ChBE</em> · 2025</p>
+    </header>
+    <p>$5,000 stipend + $5,000 materials support (through June 2025).</p>
+  </article>
+
+  <!-- Add others as needed -->
+</section>
 
         
 
