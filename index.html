@@ -111,15 +111,12 @@
 </section>
 
       <div class="cv-section" style="text-align: center; margin-top: 1.5rem;">
-  <div style="margin-bottom: 0.5rem;">
-    <a href="files/Zain_Shabeeb_CV.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; margin-right: 1rem;">CV</a>
-    <span style="color: var(--muted);">/</span>
-    <a href="files/Zain_Shabeeb_Resume.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; margin-left: 1rem;">Resume</a>
-  </div>
-  <p style="font-size: 0.85rem; color: var(--muted);">
+  <a href="Resume_Zain_Shabeeb_final.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">CV</a>
+  <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">
     Last Updated: Nov 1, 2025
   </p>
 </div>
+
     </aside>
 
     <main id="main" tabindex="-1">
@@ -138,37 +135,84 @@
       <section id="publications" class="card" aria-labelledby="publications-heading">
   <h2 id="publications-heading">Publications</h2>
 
+  <!-- Nat Comm -->
   <article class="entry" data-tags="Generative Models LPTEM">
     <header>
-      <h3 class="entry-title">Physics-informed generative modeling for liquid-phase TEM of nanoparticle diffusion</h3>
-      <p class="entry-meta"><em>Nature Communications</em>, 2025 · Zain Shabeeb et&nbsp;al.</p>
+      <h3 class="entry-title">Learning the diffusion of nanoparticles in liquid phase TEM via physics-informed generative AI</h3>
+      <p class="entry-meta"><em>Nature Communications</em>, 2025 · Zain Shabeeb, N. Goyal, P. A. Nantogmah, V. Jamali</p>
     </header>
-    <p>Transformer-VAE framework that learns nanoscale dynamics from low-SNR LPTEM movies and generates physically consistent trajectories/images for analysis and simulation.</p>
+    <p>Introduces <strong>LEONARDO</strong>, a transformer-based, physics-informed generative model that learns stochastic nanoparticle motion from LPTEM and reproduces key heterogeneity/viscoelastic signatures of the liquid cell. </p>
     <div class="resources">
-      <a class="resource" href="https://scholar.google.com/citations?hl=en&user=NOiF-vsAAAAJ" target="_blank" rel="noopener" aria-label="View on Google Scholar">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Scholar</span>
+      <a class="resource" href="https://doi.org/10.1038/s41467-025-61632-1" target="_blank" rel="noopener" aria-label="Open DOI">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>DOI</span>
       </a>
-      <!-- Optional: preprint or code links -->
-      <!-- <a class="resource" href="LINK_TO_PREPRINT" target="_blank" rel="noopener"><svg ...></svg><span>Preprint</span></a> -->
-      <!-- <a class="resource" href="LINK_TO_CODE" target="_blank" rel="noopener"><svg ...></svg><span>Code</span></a> -->
+      <a class="resource" href="https://www.nature.com/articles/s41467-025-61632-1" target="_blank" rel="noopener"><span>Publisher</span></a>
     </div>
   </article>
 
-  <article class="entry" data-tags="AI4Science">
+  <!-- NeurIPS AI4Science Workshop (extended) -->
+  <article class="entry" data-tags="AI4Science LPTEM">
     <header>
-      <h3 class="entry-title">Learning nanoscale dynamics from electron microscopy (extended abstract)</h3>
-      <p class="entry-meta"><em>NeurIPS AI4Science Workshop</em>, 2025 · Zain Shabeeb et&nbsp;al.</p>
+      <h3 class="entry-title">LEONARDO: A physics-informed generative model for stochastic nanoparticle dynamics in liquid-phase TEM</h3>
+      <p class="entry-meta"><em>NeurIPS AI4Science Workshop</em>, 2025 · Z. Shabeeb, V. Jamali</p>
     </header>
-    <p>Workshop contribution on physics-guided generative modeling and evaluation for EM datasets, emphasizing data-efficiency and high-frequency fidelity.</p>
+    <p>Extended abstract detailing the physics-guided loss and attention architecture used to model nanoscale dynamics under low-SNR conditions.</p>
     <div class="resources">
-      <a class="resource" href="https://scholar.google.com/citations?hl=en&user=NOiF-vsAAAAJ" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5h5V3H3v7h2z"/></svg><span>Scholar</span>
-      </a>
+      <a class="resource" href="https://scholar.google.com/citations?user=NOiF-vsAAAAJ&hl=en" target="_blank" rel="noopener"><span>Scholar</span></a>
+      <!-- add arXiv/OSF when available -->
     </div>
   </article>
 
-  <!-- Add more as they’re published; keep this structure -->
+  <!-- NeurIPS AI for Accelerated Materials Design Workshop -->
+  <article class="entry" data-tags="Segmentation LPTEM">
+    <header>
+      <h3 class="entry-title">SAM-EM: Real-time segmentation for automated liquid-phase TEM</h3>
+      <p class="entry-meta"><em>NeurIPS AI for Accelerated Materials Design Workshop</em>, 2025 (accepted) · A. Wang, M. Xu, R. Goel, Z. Shabeeb, I. Panicker, V. Jamali</p>
+    </header>
+    <p>Workshop paper on a SAM-2–based system fine-tuned for LPTEM to improve mask quality and temporal identity stability for automation.</p>
+    <div class="resources">
+      <a class="resource" href="https://github.com/JamaliLab/SAM4EM" target="_blank" rel="noopener"><span>Code</span></a>
+      <a class="resource" href="https://scholar.google.com/citations?user=NOiF-vsAAAAJ&hl=en" target="_blank" rel="noopener"><span>Scholar</span></a>
+    </div>
+  </article>
+
+  <!-- arXiv SPT zero-shot -->
+  <article class="entry" data-tags="Tracking LPTEM">
+    <header>
+      <h3 class="entry-title">Segment Anything Model for zero-shot single-particle tracking in liquid-phase TEM</h3>
+      <p class="entry-meta"><em>arXiv</em>, 2025 · R. Goel, Z. Shabeeb, I. Panicker, V. Jamali</p>
+    </header>
+    <p>Shows that SAM-2 segments noisy LPTEM videos in a zero-shot manner and integrates with tracking/analysis for an end-to-end SPT pipeline.</p>
+    <div class="resources">
+      <a class="resource" href="https://arxiv.org/abs/2501.03153" target="_blank" rel="noopener"><span>arXiv</span></a>
+      <a class="resource" href="https://arxiv.org/pdf/2501.03153.pdf" target="_blank" rel="noopener"><span>PDF</span></a>
+    </div>
+  </article>
+
+  <!-- Microscopy & Microanalysis 2024 (proceedings entries) -->
+  <article class="entry" data-tags="Proceedings LPTEM">
+    <header>
+      <h3 class="entry-title">Learning the physics of liquid-phase TEM nanoparticle trajectories using physics-informed generative AI</h3>
+      <p class="entry-meta"><em>Microscopy and Microanalysis</em> 30, 2024 · Z. Shabeeb, N. Goyal, V. Jamali</p>
+    </header>
+    <p>Proceedings abstract on physics-informed learning of nanoparticle trajectories from experimental LPTEM data.</p>
+    <div class="resources">
+      <a class="resource" href="https://scholar.google.com/citations?user=NOiF-vsAAAAJ&hl=en" target="_blank" rel="noopener"><span>Scholar</span></a>
+    </div>
+  </article>
+
+  <article class="entry" data-tags="Proceedings LPTEM">
+    <header>
+      <h3 class="entry-title">Determining diffusion characteristics of nanoparticles in liquid-phase TEM using deep learning</h3>
+      <p class="entry-meta"><em>Microscopy and Microanalysis</em> 30, 2024 · Z. Shabeeb, N. Goyal, V. Jamali</p>
+    </header>
+    <p>Proceedings abstract on inferring diffusion regimes from LPTEM with deep learning–based analysis.</p>
+    <div class="resources">
+      <a class="resource" href="https://scholar.google.com/citations?user=NOiF-vsAAAAJ&hl=en" target="_blank" rel="noopener"><span>Scholar</span></a>
+    </div>
+  </article>
 </section>
+
 
 
 
