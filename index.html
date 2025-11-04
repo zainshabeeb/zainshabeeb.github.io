@@ -349,11 +349,13 @@
         window.open(url, '_blank', 'noopener');
       }
 
-      // Make every image clickable to open in a new tab
-      document.querySelectorAll('img').forEach(function(img) {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', openImageInNewTab, { passive: false });
-      });
+      // Make every image clickable to open in a new tab, unless it’s already inside a link
+document.querySelectorAll('img').forEach(function(img) {
+  if (!img.closest('a')) {  // only apply if image is not wrapped in a link
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', openImageInNewTab, { passive: false });
+  }
+});
     })();
   </script>
   </body>
