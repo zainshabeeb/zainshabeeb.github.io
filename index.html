@@ -98,21 +98,29 @@
   <h2 class="sr-only">Affiliations</h2>
   <ul class="affiliations">
     <li class="row">
-      <a href="https://www.gatech.edu/" target="_blank" rel="noopener"><img src="georgia tech logo.png" alt="Georgia Tech logo" style="width:200px; height:auto;" loading="lazy" decoding="async"></a>
-      <a href="https://vidajamali.github.io/" target="_blank" rel="noopener"><img src="Jamali lab logo zoomed.png" alt="Jamali Lab logo" style="width:200px; height:auto;" loading="lazy" decoding="async"></a>
+      <a href="https://www.gatech.edu/" target="_blank" rel="noopener"><img src="georgia tech logo.png" alt="Georgia Tech logo" style="width:250px; height:auto;" loading="lazy" decoding="async"></a>
+      <a href="https://vidajamali.github.io/" target="_blank" rel="noopener"><img src="Jamali lab logo zoomed.png" alt="Jamali Lab logo" style="width:250px; height:auto;" loading="lazy" decoding="async"></a>
     </li>
     <li class="row">
-      <a href="https://www.manchester.ac.uk/" target="_blank" rel="noopener"><img src="university of manchester logo.png" alt="The University of Manchester logo" style="width:200px; height:auto;" loading="lazy" decoding="async"></a>
-      <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener"><img src="newcastle university logo.jpeg" alt="Newcastle University logo" style="width:200px; height:auto;" loading="lazy" decoding="async"></a>
+      <a href="https://www.manchester.ac.uk/" target="_blank" rel="noopener"><img src="university of manchester logo.png" alt="The University of Manchester logo" style="width:250px; height:auto;" loading="lazy" decoding="async"></a>
+      <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener"><img src="newcastle university logo.jpeg" alt="Newcastle University logo" style="width:250px; height:auto;" loading="lazy" decoding="async"></a>
     </li>
   </ul>
 </section>
 
       <div class="cv-section" style="text-align: center; margin-top: 1.5rem;">
   <a href="Resume_Zain_Shabeeb_final.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">CV</a>
-  <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">
-    Last Updated: Nov 1, 2025
-  </p>
+  <p id="last-updated" style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;"></p>
+
+<script>
+  const lastUpdated = new Date(document.lastModified);
+  const formatted = lastUpdated.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+  document.getElementById("last-updated").textContent = "Last Updated: " + formatted;
+</script>
 </div>
 
     </aside>
