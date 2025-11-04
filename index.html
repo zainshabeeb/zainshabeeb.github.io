@@ -99,7 +99,7 @@
   <ul class="affiliations">
     <li class="row">
       <a href="https://www.gatech.edu/" target="_blank" rel="noopener"><img src="georgia tech logo.png" alt="Georgia Tech logo" style="width:160px; height:auto;" loading="lazy" decoding="async"></a>
-      <a href="https://vidajamali.github.io/" target="_blank" rel="noopener"><img src="Jamali lab logo.png" alt="Jamali Lab logo" style="width:160px; height:auto;" loading="lazy" decoding="async"></a>
+      <a href="https://vidajamali.github.io/" target="_blank" rel="noopener"><img src="Jamali lab logo zoomed.png" alt="Jamali Lab logo" style="width:160px; height:auto;" loading="lazy" decoding="async"></a>
     </li>
     <li class="row">
       <a href="https://www.manchester.ac.uk/" target="_blank" rel="noopener"><img src="university of manchester logo.png" alt="The University of Manchester logo" style="width:160px; height:auto;" loading="lazy" decoding="async"></a>
@@ -331,32 +331,25 @@
     </div>
   </div>
   <script>
-    (function() {
-      // Remove existing modal click handlers by cloning media-row images
-      document.querySelectorAll('.media-row img').forEach(function(img) {
-        var clone = img.cloneNode(true);
-        if (img.parentNode) {
-          img.parentNode.replaceChild(clone, img);
-        }
-      });
+  (function () {
+    // Only make images inside .media-row open in a new tab, and only if they are NOT already links
+    function openImageInNewTab(ev) {
+      var img = ev.currentTarget;
+      var url = img.currentSrc || img.src;
+      if (!url) return;
+      ev.preventDefault();
+      ev.stopPropagation();
+      window.open(url, '_blank', 'noopener');
+    }
 
-      function openImageInNewTab(ev) {
-        var img = ev.currentTarget;
-        var url = img.currentSrc || img.src;
-        if (!url) return;
-        ev.preventDefault();
-        ev.stopPropagation();
-        window.open(url, '_blank', 'noopener');
+    document.querySelectorAll('.media-row img').forEach(function (img) {
+      if (!img.closest('a')) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', openImageInNewTab, { passive: false });
       }
+    });
+  })();
+</script>
 
-      // Make every image clickable to open in a new tab, unless it’s already inside a link
-document.querySelectorAll('img').forEach(function(img) {
-  if (!img.closest('a')) {  // only apply if image is not wrapped in a link
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', openImageInNewTab, { passive: false });
-  }
-});
-    })();
-  </script>
   </body>
 </html>
